@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/gameover.unity
     guid: e55eb394828aa254584a6908cf05523e
+  - enabled: 1
+    path: Assets/Scenes/wingame.unity
+    guid: 58c6e289cdc339e4b8e438eb5227f096
   m_configObjects: {}
