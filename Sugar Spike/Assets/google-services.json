@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "886827681121",
+    "project_id": "sugar-spike-mad",
+    "storage_bucket": "sugar-spike-mad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886827681121:android:7f03542fdbb50bd7d3b120",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJoh7UzDr1ngbqKERgLU4qJnNbGDAxdns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
