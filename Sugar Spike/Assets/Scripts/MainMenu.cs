@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    public void Logingame()
+    public void Playgame()
+    {
+        SceneManager.LoadSceneAsync(3);
+    }
+    public void settingsgame()
     {
         SceneManager.LoadSceneAsync(1);
-    }
-    public void SignUpgame()
-    {
-        SceneManager.LoadSceneAsync(2);
 
     }
 }

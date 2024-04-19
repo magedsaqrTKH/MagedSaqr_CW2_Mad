@@ -5,6 +5,8 @@ public class HealthManager : MonoBehaviour
 {
     public Image healthBar;
     public float healthAmount = 100f;
+    public GameObject normalPlayer;
+    public GameObject fatPlayer;
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class HealthManager : MonoBehaviour
         // Check if the trigger is with an object that should cause damage
         if (collision.gameObject.CompareTag("DamageObject"))
         {
-            TakeSugar(5); // Adjust the damage amount as needed
+            TakeSugar(10); // Adjust the damage amount as needed
         }
         else if (collision.gameObject.CompareTag("HealObject"))
         {
@@ -38,6 +40,11 @@ public class HealthManager : MonoBehaviour
             // Load the game over scene
             SceneManager.LoadScene(4);
         }
+        else if (healthAmount <= 50)
+        {
+            fatPlayer.SetActive(true);
+        }
+        
     }
 
     public void Recover(float healAmount)
@@ -45,5 +52,10 @@ public class HealthManager : MonoBehaviour
         healthAmount += healAmount;
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
         healthBar.fillAmount = healthAmount / 100f;
+
+        if (healthAmount > 50)
+        {
+            fatPlayer.SetActive(false);
+        }
     }
 }
