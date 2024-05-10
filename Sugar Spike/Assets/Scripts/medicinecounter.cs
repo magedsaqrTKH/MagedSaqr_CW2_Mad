@@ -22,7 +22,7 @@ public class medicinecounter : MonoBehaviour
         medText.text = "Medicine: " + currentMeds.ToString();
         if (currentMeds >= 50)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(5);
         }
     }
 }

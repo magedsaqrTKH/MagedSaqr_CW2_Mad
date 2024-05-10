@@ -6,11 +6,11 @@ public class MainMenu : MonoBehaviour
 {
     public void Playgame()
     {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(2);
     }
     public void settingsgame()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(8);
 
     }
 }

@@ -11,7 +11,7 @@ public class fruitss : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            fruitcounter.instance.increaseCoins(value);
+            fruitcounter.instance.increaseFruits(value);
         }
     }
 }

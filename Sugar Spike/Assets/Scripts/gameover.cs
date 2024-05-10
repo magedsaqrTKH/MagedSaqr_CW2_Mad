@@ -6,11 +6,11 @@ public class gameover : MonoBehaviour
 {
     public void Retry()
     {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(2);
     }
     public void ViewLeaderboard()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(7);
 
     }
     
@@ -20,7 +20,7 @@ public class gameover : MonoBehaviour
     }
     public void Quit()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(6);
 
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Authmanager : MonoBehaviour
 {
@@ -109,6 +110,7 @@ public class Authmanager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
+            SceneManager.LoadScene(0);
         }
     }
 
@@ -184,7 +186,7 @@ public class Authmanager : MonoBehaviour
                     {
                         //Username is now set
                         //Now return to login screen
-                        //UiManager.instance.LoginScreen();
+                        UiManager.instance.LoginScreen();
                         warningRegisterText.text = "";
                     }
                 }

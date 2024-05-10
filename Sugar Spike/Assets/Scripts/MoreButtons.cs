@@ -14,9 +14,10 @@ public class MoreButtons : MonoBehaviour
         SceneManager.LoadSceneAsync(2);
 
     }
-    public void ReturntoLogin()
+    public void StartGame()
     {
         SceneManager.LoadSceneAsync(1);
 
     }
+
 }
