@@ -13,4 +13,8 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(8);
 
     }
+    public void Logout()
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
 }

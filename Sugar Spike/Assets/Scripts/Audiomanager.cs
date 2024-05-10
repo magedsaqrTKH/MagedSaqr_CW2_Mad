@@ -14,6 +14,7 @@ public class Audiomanager : MonoBehaviour
 
     private void Start()
     {
+        musicSource.loop = true;
         musicSource.clip = backMusic;
         musicSource.Play();
     }
