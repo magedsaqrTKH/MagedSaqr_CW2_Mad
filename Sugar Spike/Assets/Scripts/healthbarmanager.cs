@@ -14,13 +14,13 @@ public class HealthManager : MonoBehaviour
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audiomanager>();
     }
-    // OnTriggerEnter is called when the Collider other enters the trigger
+
         private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Check if the trigger is with an object that should cause damage
+       
         if (collision.gameObject.CompareTag("DamageObject"))
         {
-            TakeSugar(10);
+            TakeSugar(20);
             audioManager.SoundEffects(audioManager.eatCandy);
         }
         else if (collision.gameObject.CompareTag("HealObject"))
@@ -36,7 +36,7 @@ public class HealthManager : MonoBehaviour
         healthBar.fillAmount = healthAmount / 100f;
         if (healthAmount <= 0)
         {
-            // Load the game over scene
+            
             SceneManager.LoadScene(3);
         }
         else if (healthAmount <= 50)

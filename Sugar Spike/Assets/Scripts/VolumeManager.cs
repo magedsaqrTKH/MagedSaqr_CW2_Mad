@@ -19,7 +19,7 @@ public class VolumeManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
    public void AdjustVolume()
     {
         AudioListener.volume = volumeSlider.value;

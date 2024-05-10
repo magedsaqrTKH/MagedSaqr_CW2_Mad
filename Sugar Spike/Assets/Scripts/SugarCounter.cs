@@ -12,7 +12,7 @@ public class sugarCounter : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    
     public void increaseSugars(int v)
     {
         currentSugars += v;

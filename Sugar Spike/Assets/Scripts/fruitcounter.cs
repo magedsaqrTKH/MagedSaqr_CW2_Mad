@@ -20,7 +20,7 @@ public class fruitcounter : MonoBehaviour
     {
         currentFruits += v;
         fruitText.text = "Fruits: " + currentFruits.ToString();
-        if (currentFruits >= 100)
+        if (currentFruits >= 10)
         {
             SceneManager.LoadScene(5);
         }

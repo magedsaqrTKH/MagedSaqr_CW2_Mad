@@ -7,7 +7,7 @@ public class obstacel_generator : MonoBehaviour
     public float maxY;
     public float minX;
     public float minY;
-    public float timeBetweenSpawns = 1f; // Adjust as needed
+    public float timeBetweenSpawns = 1f;
     private float nextSpawnTime;
 
     void Update()
@@ -21,11 +21,11 @@ public class obstacel_generator : MonoBehaviour
 
     void SpawnObstacle()
     {
-        // Randomize spawn position within adjusted range
+        
         float x = Random.Range(minX, maxX);
         float y = Random.Range(minY, maxY);
 
-        // Instantiate obstacle at the randomized position
+        
         Instantiate(obstacles, transform.position + new Vector3(x, y, 0), Quaternion.identity);
     }
 }

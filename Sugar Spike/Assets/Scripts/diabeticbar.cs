@@ -18,14 +18,14 @@ public class diabeticbar : MonoBehaviour
     {
         ParticleSystem particleSystemInstance = Instantiate(healParticlePrefab, transform.position, Quaternion.identity);
 
-        // Play the particle system
+        
         particleSystemInstance.Play();
     }
-    // OnTriggerEnter is called when the Collider other enters the trigger
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
        
-        // Check if the trigger is with an object that should cause damage
+      
         if (collision.gameObject.CompareTag("DamageObject"))
         {
             TakeSugar(100);
@@ -52,7 +52,7 @@ public class diabeticbar : MonoBehaviour
         healthBar.fillAmount = healthAmount / 100f;
         if (healthAmount <= 0)
         {
-            // Load the game over scene
+            
             SceneManager.LoadScene(4);
         }
     }
